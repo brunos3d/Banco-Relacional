@@ -37,3 +37,9 @@ select nome, sigla from estados
 select nome, sigla from estados
     where populacao >= 10
     order by populacao desc
+
+--outras formas de realizar consulta
+select `nome` from `estados` where sigla = 'MA'
+
+--usando o "apelido" da tabela estado
+select est.nome from estados est where sigla = 'MA'
